@@ -105,11 +105,15 @@ describe('Listings CRUD tests', function() {
   });
 
   after(function(done) {
+    console.log(id);
     if(id) {
       Listing.remove({_id: id}, function(err){
         if(err) throw err;
         done();
       })
+    }
+    else{
+      done();
     }
   });
 });
