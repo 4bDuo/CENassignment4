@@ -36,6 +36,6 @@ module.exports.init = function() {
    app.all('/*', function(req, res) {
     res.sendFile(path.resolve('client/index.html'));
   });
-  
+
   return app;
 };  
