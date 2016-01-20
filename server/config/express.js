@@ -26,10 +26,10 @@ module.exports.init = function() {
   });
 
   /* serve static files */
-  
+  app.use('/static', express.static(__dirname + '/public'));
 
   /* use the listings router for requests to the api */
-
+  
 
   /* go to homepage for all routes not specified */ 
 
